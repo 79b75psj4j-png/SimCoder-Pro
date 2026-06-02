@@ -1,0 +1,39 @@
+{
+  "name": "simcoder-pro",
+  "version": "1.0.0",
+  "description": "Medical Coding Career Simulator - Realistic employment training environment with complete code reference manuals and comprehensive training library",
+  "main": "index.js",
+  "scripts": {
+    "dev": "npm run dev:backend & npm run dev:frontend",
+    "dev:backend": "cd backend && npm run dev",
+    "dev:frontend": "cd frontend && npm run dev",
+    "build": "npm run build:backend && npm run build:frontend",
+    "build:backend": "cd backend && npm run build",
+    "build:frontend": "cd frontend && npm run build",
+    "test": "npm run test:backend && npm run test:frontend",
+    "test:backend": "cd backend && npm test",
+    "test:frontend": "cd frontend && npm test",
+    "docker:build": "docker-compose build",
+    "docker:up": "docker-compose up -d",
+    "docker:down": "docker-compose down",
+    "seed:codes": "node backend/scripts/seedCodes.js",
+    "seed:training": "node backend/scripts/seedTraining.js"
+  },
+  "keywords": [
+    "medical coding",
+    "career simulator",
+    "ICD-10",
+    "CPT",
+    "HCPCS",
+    "healthcare",
+    "education",
+    "training",
+    "code reference"
+  ],
+  "author": "",
+  "license": "MIT",
+  "workspaces": [
+    "frontend",
+    "backend"
+  ]
+}
